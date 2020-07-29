@@ -1,9 +1,9 @@
-'use strict';
+'use strict'; //strict mode - makes it easier to write secure js by throwing an error if something not allowed is attempted
 
-var fs        = require('fs');
-var path      = require('path');
-var Sequelize = require('sequelize');
-var basename  = path.basename(module.filename);
+var fs        = require('fs'); //requires built-in file system module
+var path      = require('path'); //requires path module
+var Sequelize = require('sequelize'); //requires sequelize
+var basename  = path.basename(module.filename); //returns the filename part of a file path
 var env       = process.env.NODE_ENV || 'development';
 var config    = require(__dirname + '/../config/config.json')[env];
 var db        = {};
